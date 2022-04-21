@@ -13,10 +13,10 @@ function App() {
       setData(response.data)
       // console.log(response.data)
     })
-    // setZipCode("")
+    setZipCode(" ")
   }
   }
-  // let [icon,setIcon] = useState()
+  
   // let currentDate = new Date()
   // let date = `${currentDate.getMonth()+1}/${currentDate.getDate()}/${currentDate.getFullYear()} ${currentDate.getHours()}:${currentDate.getMinutes()}:${currentDate.getSeconds()}`
   const currDate = new Date().toLocaleDateString();
