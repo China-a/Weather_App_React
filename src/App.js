@@ -46,7 +46,7 @@ function App() {
           <h2> {data.name}</h2>
           </div>
         <div className="WeatherConditions">
-        <img src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`} alt=""></img>
+        {/* <img src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`} alt=""></img> */}
           {data.weather ? <h3>{data.weather[0].main}</h3> :null}
         </div>
         <div className="Temp">
