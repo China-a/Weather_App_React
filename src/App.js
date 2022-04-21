@@ -1,7 +1,5 @@
 import React, {useState} from "react";
 import Axios from "axios";
-// import Titles from "./Components/Titles";
-// import Form from "./Components/Form";
 
 function App() {
 
@@ -48,7 +46,7 @@ function App() {
           <h2> {data.name}</h2>
           </div>
         <div className="WeatherConditions">
-          {/* /* <image src="http://openweathermap.org/img/w/${props.icon}.png"/> */}
+        <img src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`} alt=""></img>
           {data.weather ? <h3>{data.weather[0].main}</h3> :null}
         </div>
         <div className="Temp">
